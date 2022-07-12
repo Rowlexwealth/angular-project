@@ -1,0 +1,85 @@
+.row{
+    padding: 5px 5px;
+    color: red;
+    background-color: rgb(233, 241, 233);
+    height: 370px;
+    width: 45%;
+    margin: 5px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+h3 a{
+    display: inline;
+    color: gold;
+    text-decoration: none;
+}
+
+.cost{
+    padding: 20px;
+    background-color: rgb(95, 95, 133);
+    font-size: 21px;
+}
+
+.box-link{
+    padding: 100px 0px;
+}
+
+.rows{
+    padding-top: 50px;
+}
+
+h2, h2:hover{
+    text-align: center;
+    font-size: 45px;
+}
+
+h2:hover{
+    color: red;
+}
+
+h1{
+    font-size: 20px;
+}
+
+.banner{
+    display: flex;
+}
+
+.artic{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    text-align: justify;
+    
+}
+
+.img{
+    display: flex;
+    flex: 4;
+    padding: 20px 50px;
+
+}
+
+.text{
+    flex: 5;
+}
+
+@media (max-width: 1020px) {
+    .nav-link{
+        width: 100%;
+        padding: 10px 5px;
+        box-sizing: border-box;
+    }
+
+    .row{
+        height: 470px;
+        color: green;
+        width: 100%;
+    }
+
+    .cost{
+        padding: 10px 20px;
+    }
+}

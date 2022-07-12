@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.navigate{
+    display: flex;
+}
+
+.navbar{
+    padding: 5px 30px;
+}
+.a{
+    flex: 2;
+}
+
+.b{
+    flex: 2;
+    padding: 10px 200px;
+    font-size: 20px;
+}
+
+.b a{
+    color: black;
+    padding: 10px 30px;
+}
