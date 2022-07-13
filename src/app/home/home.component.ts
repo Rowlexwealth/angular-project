@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  myPicture: string = "home/imagged/Fifa.png"
+  myPicture: string = "assets/images/Fifa.png"
 
-  myImage = "home/imagged/Wrist-Watch.jpg"
+  myImage = "assets/images/new-img.jpg"
 
   
 
