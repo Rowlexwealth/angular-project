@@ -4,14 +4,15 @@
     </div>
     <div class="card-body">
         <div class="row">
-            <div class="col-md-6">Filter by comonent:
-                <input type="text" placeholder="Comment"/>
+            <div class="col-md-6">Filter by:
+                <input type="text" placeholder="Comment"
+                    [(ngModel)]='listFilter'/>
             </div>  
         </div>
         <br>
         <div class="row">
             <div class="col-md-6">
-                <h4>Filtered by component: </h4>
+                <h4>Filtered by: {{listFilter}}</h4>
             </div>
         </div>
         <div class="table-responsive">
@@ -34,16 +35,16 @@
                 <tbody>
                     <tr *ngFor="let product of products">
                         <td>
-                            <img 
+                            <img *ngIf="showImage"
                                 [src]="product.imageUrl"
                                 [title]="product.productName"
                                 [style.width.px]="imageWidth"
                                 [style.margin.px]="imageMargin">
                         </td>
                         <td>{{ product.productName }}</td>
-                        <td>{{ product.productCode }}</td>
+                        <td>{{ product.productCode | lowercase }}</td>
                         <td>{{ product.releaseDate }}</td>
-                        <td>{{ product.price }}</td>
+                        <td>{{ product.price | currency: 'USD':'symbol':'1.2-2' }}</td>
                         <td>{{ product.starRating }}</td>
                     </tr>
                 </tbody>

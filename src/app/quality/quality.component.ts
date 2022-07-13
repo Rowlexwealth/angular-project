@@ -9,7 +9,8 @@ export class QualityComponent implements OnInit {
   myTitle = 'API CONSUME';
   imageWidth = 50;
   imageMargin = 2;
-  showImage = false;
+  showImage: boolean = false;
+  listFilter: string = 'cart';
   products: any[] = [
     {
       "productId": 1,
