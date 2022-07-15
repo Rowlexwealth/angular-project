@@ -5,8 +5,8 @@
     <div class="card-body">
         <div class="row">
             <div class="col-md-6">Filter by:
-                <input type="text" placeholder="Comment"
-                    [(ngModel)]='listFilter'/>
+                <input type="text" placeholder="search items"
+                    [(ngModel)]="listFilter" />
             </div>  
         </div>
         <br>
@@ -33,7 +33,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let product of products">
+                    <tr *ngFor="let product of filteredProducts">
                         <td>
                             <img *ngIf="showImage"
                                 [src]="product.imageUrl"
@@ -42,10 +42,14 @@
                                 [style.margin.px]="imageMargin">
                         </td>
                         <td>{{ product.productName }}</td>
-                        <td>{{ product.productCode | lowercase }}</td>
+                        <td>{{ product.productCode | lowercase | convertToSpaces:'-' }}</td>
                         <td>{{ product.releaseDate }}</td>
-                        <td>{{ product.price | currency: 'USD':'symbol':'1.2-2' }}</td>
-                        <td>{{ product.starRating }}</td>
+                        <td>{{ product.price | currency: 'USD':'symbol':'1.2-2'}}</td>
+                        <td>
+                            <app-shared [rating]='product.starRating'
+                                (ratingClicked)= 'onRatingClicked($event)'>
+                            </app-shared>
+                        </td>
                     </tr>
                 </tbody>
             </div>

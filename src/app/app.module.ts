@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ProductsComponent } from './products/products.component';
+import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
+import { SharedComponent } from './shared/shared.component';
 import { QualityComponent } from './quality/quality.component';
 
 @NgModule({
@@ -15,8 +17,11 @@ import { QualityComponent } from './quality/quality.component';
     HomeComponent,
     ContactsComponent,
     ProductsComponent,
-    QualityComponent
+    ConvertToSpacesPipe,
+    SharedComponent,
+    QualityComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
