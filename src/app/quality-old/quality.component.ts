@@ -12,7 +12,6 @@ export class QualityComponent implements OnInit {
   imageWidth = 50;
   imageMargin = 2;
   showImage: boolean = false;
-  errorMessage: string = '';
 
   private _listFilter: string = '';
   get listFilter(): string {
@@ -40,14 +39,8 @@ export class QualityComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.qualityService.getProducts().subscribe({
-      next: products => {
-        this.products = products;
-        this.filteredProducts = this.products;
-      },
-      error: err => this.errorMessage = err
-    });
-    
+    this.products = this.qualityService.getProducts();
+    this.filteredProducts = this.products;
   }
 
   onRatingClicked(message: string): void {
