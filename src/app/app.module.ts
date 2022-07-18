@@ -11,7 +11,6 @@ import { ProductsComponent } from './products/products.component';
 import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
 import { SharedComponent } from './shared/shared.component';
 import { QualityComponent } from './quality/quality.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +20,7 @@ import { QualityComponent } from './quality/quality.component';
     ConvertToSpacesPipe,
     SharedComponent,
     QualityComponent,
+  
   ],
 
   imports: [
