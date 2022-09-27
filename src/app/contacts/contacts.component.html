@@ -1,56 +1,57 @@
-<div class="formed"> 
-<form class="row g-3 needs-validation" novalidate>
-  <div class="col-md-4 position-relative">
-    <label for="validationTooltip01" class="form-label">First name</label>
-    <input type="text" class="form-control" id="validationTooltip01" placeholder="Rowland" required>
-    <div class="valid-tooltip">
-      Looks good!
-    </div>
-  </div>
-  <div class="col-md-4 position-relative">
-    <label for="validationTooltip02" class="form-label">Last name</label>
-    <input type="text" class="form-control" id="validationTooltip02" placeholder="Ugiangbe" required>
-    <div class="valid-tooltip">
-      Looks good!
-    </div>
-  </div>
-  <div class="col-md-4 position-relative">
-    <label for="validationTooltipUsername" class="form-label">Username</label>
-    <div class="input-group has-validation">
-      <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-      <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
-      <div class="invalid-tooltip">
-        Please choose a unique and valid username.
+<div class="container">
+  <div class="formed p-4 mt-5 mb-5">
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4 position-relative">
+        <label for="validationTooltip01" class="form-label mt-3">First name</label>
+        <input type="text" class="form-control" id="validationTooltip01" placeholder="Rowland" required>
+        <div class="valid-tooltip">
+          Looks good!
+        </div>
       </div>
-    </div>
+      <div class="col-md-4 position-relative">
+        <label for="validationTooltip02" class="form-label mt-3">Last name</label>
+        <input type="text" class="form-control" id="validationTooltip02" placeholder="Ugiangbe" required>
+        <div class="valid-tooltip">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 position-relative">
+        <label for="validationTooltipUsername" class="form-label mt-3">Username</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+          <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+          <div class="invalid-tooltip">
+            Please choose a unique and valid username.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 position-relative">
+        <label for="validationTooltip03" class="form-label mt-3">City</label>
+        <input type="text" class="form-control" id="validationTooltip03" required>
+        <div class="invalid-tooltip">
+          Please provide a valid city.
+        </div>
+      </div>
+      <div class="col-md-4 position-relative">
+        <label for="validationTooltip04" class="form-label mt-3">State</label>
+        <select class="form-select" id="validationTooltip04" required>
+          <option selected disabled value="">Choose...</option>
+          <option>...</option>
+        </select>
+        <div class="invalid-tooltip">
+          Please select a valid state.
+        </div>
+      </div>
+      <div class="col-md-4 position-relative mb-4">
+        <label for="validationTooltip05" class="form-label mt-3">Zip</label>
+        <input type="text" class="form-control" style="padding: 5px 10px;" id="validationTooltip05" required>
+        <div class="invalid-tooltip">
+          Please provide a valid zip.
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary mb-3" type="submit">Submit form</button>
+      </div>
+    </form>
   </div>
-  <div class="col-md-6 position-relative">
-    <label for="validationTooltip03" class="form-label">City</label>
-    <input type="text" class="form-control" id="validationTooltip03" required>
-    <div class="invalid-tooltip">
-      Please provide a valid city.
-    </div>
-  </div>
-  <div class="col-md-3 position-relative">
-    <label for="validationTooltip04" class="form-label">State</label>
-    <select class="form-select" id="validationTooltip04" required>
-      <option selected disabled value="">Choose...</option>
-      <option>...</option>
-    </select>
-    <div class="invalid-tooltip">
-      Please select a valid state.
-    </div>
-  </div>
-  <div class="col-md-6 position-relative" style="padding: 8px 350px;">
-    <label for="validationTooltip05" class="form-label" style="padding: 10px 5px;">Zip</label>
-    <input type="text" class="form-control" style="padding: 5px 80px;" id="validationTooltip05" required>
-    <div class="invalid-tooltip">
-      Please provide a valid zip.
-    </div>
-  </div>
-  <div class="col-12">
-    <button class="btn btn-primary" type="submit">Submit form</button>
-  </div>
-</form>
-
 </div>

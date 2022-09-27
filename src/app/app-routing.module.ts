@@ -17,7 +17,8 @@ const routes: Routes = [
   {
     path: 'details/:id' ,
     canActivate: [DetailGuard],
-    component: DetailsComponent}
+    component: DetailsComponent
+  }
 ];
 
 @NgModule({
